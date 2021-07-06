@@ -134,7 +134,6 @@ export const postsSubschema = {
 - `schema`: this is a non-executable schema representing the remote API. The remote schema may be obtained using [introspection](/docs/remote-schemas/#introspectschemaexecutor-context), or fetched as a flat SDL string (from a server or repo) and built into a schema using [`buildSchema`](https://graphql.org/graphql-js/utilities/#buildschema). Note that not all GraphQL servers enable introspection, and those that do will not include custom directives.
 - `executor`: is a generic method that performs requests to a remote schema. It's quite simple to [write your own](/docs/remote-schemas#creating-an-executor). Subschema config uses the executor for query and mutation operations. See [handbook example](https://github.com/gmac/schema-stitching-handbook/tree/master/combining-local-and-remote-schemas).
 
-
 ## Duplicate types
 
 Stitching has two strategies for handling types duplicated across subschemas: an automatic merge strategy (default), and an older manual resolution strategy. You may select between these strategies using the `mergeTypes` option.
