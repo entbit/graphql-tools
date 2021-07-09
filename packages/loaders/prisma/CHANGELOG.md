@@ -1,5 +1,26 @@
 # @graphql-tools/prisma-loader
 
+## 6.3.1
+
+### Patch Changes
+
+- Updated dependencies [af9a78de]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [614c08cc]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [a31f9593]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [c0ca3190]
+- Updated dependencies [982c8f53]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [fd81e800]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+  - @graphql-tools/url-loader@7.0.0
+  - @graphql-tools/utils@8.0.0
+
 ## 6.3.0
 
 ### Minor Changes

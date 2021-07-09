@@ -1,5 +1,35 @@
 # @graphql-tools/module-loader
 
+## 7.0.0
+
+### Major Changes
+
+- af9a78de: BREAKING CHANGE
+
+  - Now each loader handles glob patterns internally and returns an array of `Source` object instead of single `Source`
+
+  - GraphQL Tag Pluck now respects code locations and returns graphql-js `Source` objects for each found code block
+
+  - Thanks to the one above, `CodeFileLoader` now returns different `Source` objects for each found SDL code block.
+
+### Minor Changes
+
+- a31f9593: feat(module-loader): check if module exists using FS
+
+### Patch Changes
+
+- Updated dependencies [af9a78de]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [c0ca3190]
+- Updated dependencies [982c8f53]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+  - @graphql-tools/utils@8.0.0
+
 ## 6.2.7
 
 ### Patch Changes
