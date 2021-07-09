@@ -1,5 +1,28 @@
 # @graphql-tools/stitching-directives
 
+## 1.4.0
+
+### Minor Changes
+
+- 70cd65eb: feat(stitching-directives): move federation-to-stitching-sdl
+
+### Patch Changes
+
+- Updated dependencies [af9a78de]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [aa43054d]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [c0ca3190]
+- Updated dependencies [982c8f53]
+- Updated dependencies [7d3e3006]
+- Updated dependencies [7d3e3006]
+  - @graphql-tools/utils@8.0.0
+  - @graphql-tools/delegate@8.0.0
+
 ## 1.3.3
 
 ### Patch Changes

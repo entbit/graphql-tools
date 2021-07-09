@@ -1,5 +1,51 @@
 # @graphql-tools/utils
 
+## 8.0.0
+
+### Major Changes
+
+- af9a78de: BREAKING CHANGE
+
+  - Now each loader handles glob patterns internally and returns an array of `Source` object instead of single `Source`
+
+  - GraphQL Tag Pluck now respects code locations and returns graphql-js `Source` objects for each found code block
+
+  - Thanks to the one above, `CodeFileLoader` now returns different `Source` objects for each found SDL code block.
+
+- 7d3e3006: BREAKING CHANGE
+  - Remove `fieldToFieldConfig`, `argsToFieldConfigArgument` and `argumentToArgumentConfig`
+  - - You can use `.toConfig` method instead for each.
+- 7d3e3006: BREAKING CHANGE
+  - Legacy Schema Directives and Directive Resolvers have been removed
+  - - You can check the new method for both;
+  - - - https://www.graphql-tools.com/docs/schema-directives
+- 7d3e3006: BREAKING CHANGE
+  - Now it uses the native [`AggregateError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError) implementation. The major difference is the individual errors are kept under `errors` property instead of the object itself with `Symbol.iterator`.
+  ```js
+  // From;
+  for (const error of aggregateError)
+  // To;
+  for (const error of aggregateError.errors)
+  ```
+- 7d3e3006: BREAKING CHANGE
+  - No longer exports `debugLog` but uses `console.log` directly only if `DEBUG` is available under `process.env`
+- 7d3e3006: BREAKING CHANGE
+  - No longer applies `camelCase` naming convention in `buildOperationNodeForField`
+- c0ca3190: BREAKING CHANGE
+  - Remove Subscriber and use only Executor
+  - - Now `Executor` can receive `AsyncIterable` and subscriptions will also be handled by `Executor`. This is a future-proof change for defer, stream and live queries
+- 7d3e3006: BREAKING CHANGE
+  - No longer exports `SchemaVisitor`, `visitSchema` and `VisitSchemaKind`
+  - - Use [`mapSchema`](https://www.graphql-tools.com/docs/schema-directives/#full-mapschema-api) instead
+
+### Minor Changes
+
+- 7d3e3006: feat(utils): Respect operationName and rootValue in ExecutionParams
+
+### Patch Changes
+
+- 982c8f53: enhance(utils): refactor, cleanup and remove extra work
+
 ## 7.10.0
 
 ### Minor Changes
